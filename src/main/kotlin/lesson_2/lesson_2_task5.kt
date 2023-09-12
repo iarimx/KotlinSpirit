@@ -4,8 +4,8 @@ import kotlin.math.pow
 
 fun main() {
     val sum = 70000
-    val percent: Double = 0.167
+    val percent: Double = 16.7
     val year = 20
-    val sumFinale = sum * (1 + percent/1).pow(1 * year)
+    val sumFinale: Double = sum * (1 + percent / 100).pow(1 * year)
     println(sumFinale)
 }

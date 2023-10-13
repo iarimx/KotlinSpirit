@@ -1,14 +1,14 @@
 package lesson_4
 
 fun main() {
-    var todayTable = 13
-    var tomorrowTable = 4
+    var reservedTablesToday = 13
+    var freeTableTomorrow = 4
 
-    val todayResult = todayTable < COMMON_TABLE
-    val tomorrowResult = tomorrowTable < COMMON_TABLE
+    val  isTodayFree = reservedTablesToday < TABLES_COUNT
+    val  isTomorrowFree = freeTableTomorrow < TABLES_COUNT
 
-    println("Доступность столиков на сегодня: $todayResult " + "\nДоступность столиков на завтра: $tomorrowResult")
+    println("Доступность столиков на сегодня: $isTodayFree " + "\nДоступность столиков на завтра: $isTomorrowFree")
 
 
 }
-const val COMMON_TABLE = 13
+const val TABLES_COUNT = 13
